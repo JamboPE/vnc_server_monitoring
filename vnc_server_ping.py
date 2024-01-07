@@ -4,7 +4,7 @@ import os
 hostname = "" # Hostname or IP address of device running VNC
 port = 5900 # Port number of VNC server
 api_link = "" # link given by uptime Kuma for PUSH-ing to
-filename = str(os.path.abspath(__file__))+"prev_vnc_state"
+filename = str(os.path.dirname(os.path.abspath(__file__)))+"prev_vnc_state"
 
 def rw_file(rw,data):
     file = open(filename,rw)
