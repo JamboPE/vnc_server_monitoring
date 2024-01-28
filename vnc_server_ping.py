@@ -11,7 +11,7 @@ def rw_file(rw,data):
     if rw == "w":
         file.write(data)
     elif rw == "r":
-        return file.read()
+        return str(int(file.read()))
     file.close()
 
 def check_vnc_server():
